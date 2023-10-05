@@ -24,6 +24,7 @@ namespace QrCode.Controllers
             Checkpoint => Checkpoint.Pengunjung.IdPengunjung,
             (Pengunjung, Checkpoint) => new
             {
+                IdCheckpoint = Checkpoint.IdCheckpoint,
                 IdPengunjung = Checkpoint.IdPengunjung,
                 Nama = Pengunjung.Nama,
                 NoHP = Pengunjung.NoHP,
@@ -31,7 +32,8 @@ namespace QrCode.Controllers
                 Expose = Checkpoint.Expose,
                 Force = Checkpoint.Force,
                 BTS = Checkpoint.BTS,
-                UTCall = Checkpoint.UTCall
+                UTCall = Checkpoint.UTCall,
+                CreatedAt = Pengunjung.CreatedAt
             }
             ).ToList();
 
