@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql2": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/eastasia/connectors/ConnectionStringsConnectQr_7B6C670829",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/openhousedbserver/databases/QrCode",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:ConnectQr",
+      "dynamicId": null
+    }
+  }
+}

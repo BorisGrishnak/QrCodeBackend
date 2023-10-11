@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("MyPolicy", builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://dev-aks.unitedtractors.com:31130/")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
